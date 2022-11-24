@@ -50,7 +50,6 @@ The following is a list of the data structures used in the bookstore management 
 		virtual bool search(string search);	//the search method returns true if any of the other methods return true
 	};
 
-
 	class LiteraryBook : public Book
 	{
 	protected:
@@ -159,6 +158,7 @@ The following is a list of the data structures used in the bookstore management 
 
 		void recommend();
 	}; 
+	
 All of the methods used for some sort of “search” are implemented using either KMP pattern matching algorithms (for strings that use a smaller alphabet, such as an ISBN or DOI code), with a worst-case time complexity of O(n), or a BM pattern matching algorithm (for strings that may use up all of the English alphabet, such as the title of a book or the name of an author), with an average time complexity of O(n). The BM algorithm can potentially be much faster than the KMP algorithm (which is more reliable), but only in cases where letters can be skipped, so it will not be used for strings that use very small and limited alphabets, like the ISBN and DOI codes.
 The program uses a vector of Book type pointers to store references to all the books in the database. Adding a new element to the vector is done in the usual time complexity, either O(1) if there is empty pre-allocated space in the vector, or O(n), if the vector needs to be resized to add the element. Deleting an element is similarly done in O(n) time (it will be therefore recommended that elements are not generally deleted, even if their quantity reaches 0).
 The “recommend” polymorphic function has a different implementation for each of the seven subclasses. It attributes a compatibility score to each book stored in the vector (and store these values in a separate array), based on different parameters, with different weights, and then implements a quicksort algorithm to sort the elements in the vector by their compatibility score. This operation is done, as per the quicksort algorithm, in O(n*log n) time complexity.
