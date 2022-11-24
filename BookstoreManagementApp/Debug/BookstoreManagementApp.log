@@ -1,0 +1,25 @@
+﻿  BookstoreApp.cpp
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(54,21): warning C4018: '<': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(65,18): warning C4018: '<': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(95,21): warning C4018: '<': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(98,16): warning C4018: '<=': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(124,21): warning C4018: '<': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(127,16): warning C4018: '<=': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(273,21): warning C4018: '<': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(276,16): warning C4018: '<=': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(338,21): warning C4018: '<': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(341,16): warning C4018: '<=': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(380,21): warning C4018: '<': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(416,21): warning C4018: '<': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(450,21): warning C4018: '<': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(483,21): warning C4018: '<': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(518,21): warning C4018: '<': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(558,21): warning C4018: '<': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(569,18): warning C4018: '<': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(597,21): warning C4018: '<': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(642,21): warning C4018: '<': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(645,16): warning C4018: '<=': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(670,21): warning C4018: '<': signed/unsigned mismatch
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(953,5): warning C4551: function call missing argument list
+D:\School\FDS\Course Project\BookstoreManagementApp\BookstoreApp.cpp(974,23): warning C4018: '<': signed/unsigned mismatch
+  BookstoreManagementApp.vcxproj -> D:\School\FDS\Course Project\BookstoreManagementApp\Debug\BookstoreManagementApp.exe

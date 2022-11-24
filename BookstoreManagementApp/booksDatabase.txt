@@ -1,0 +1,35 @@
+fiction,Pride and Prejudice,Jane Austen,9780140430721,279,30.0,Romance,bestseller,4
+fiction,Frankenstein; Or The Modern Prometheus,Mary Wollstonecraft Shelley,9781402726668,324,25.5,Horror,bestseller,1
+fiction,Alice's Adventures in Wonderland,Lewis Carroll,9780582534148,320,18.7,Fantasy,not bestseller,3
+fiction,The Adventures of Sherlock Holmes,Arthur Conan Doyle,0800759474912,389,23.4,Mystery,bestseller,5
+fiction,A Tale of Two Cities,Charles Dickens,9780140430547,489,33.6,Historical,not bestseller,2
+fiction,The Picture of Dorian Gray,Oscar Wilde,9780140431872,272,18.9,Horror,bestseller,6
+fiction,Dracula,Bram Stoker,9781503261389,488,30.0,Horror,not bestseller,2
+fiction,War and Peace,Leo Tolstoy,9780451004215,1392,49.9,Historical,bestseller,1
+non-fiction,The Prince,Niccolò Machiavelli,9781514649312,140,22.5,Philosophy,bestseller,2
+non-fiction,Japanese Girls and Women,Alice Mabel Bacon,9780710306913,348,17.9,Historical,non bestseller,1
+scientific,Fatigue Study: The Elimination of Humanity Greatest Unnecessary Waste,Frank B. Gilberth,9780265596784,256,16.5,Historical,8,3,1917,10.1038/099023a0,1
+non-fiction,The Pillars of Hercules: A Narrative of Travels in Spain and Morocco in 1848,David Urquart,9781340981976,464,29.99,Historical,non bestseller,2
+poetry,The Prophet,Kahlil Gibran,9780646266428,127,15.69,Philosophy,4
+non-fiction,Tractatus Logico-Philosophicus,Ludwig Wittgenstein,9780415254083,255,36.65,Philosophy,bestseller,1
+non-fiction,The "City Guard"; A History of Company "B" First Regiment Infantry N.G.C.,Company B First Regiment Infantry,101011294230,135,12.34,Historical,non bestseller,1
+poetry,Milk and Honey,Rupi Kaur,9781449474256,204,31.45,Romance,2
+poetry,The Sun and Her Flowers,Rupi Kaur,9781449486792,256,25.67,Romance,3
+poetry,Citizen:An American Lyric,Claudia Rankine,9781555976903,169,24.4,Politics,2
+poetry,Pillow Thoughts,Courtney Peppernell,9781449489755,259,9.89,Romance,1
+comicbook,The Complete Maus,Art Spiegelman,9780679406419,296,37.7,Historical,not coloured,8
+comicbook,V for Vendetta,Alan Moore,9781401208417,296,26.8,Politics,coloured,2
+comicbook,Batman: The Dark Knight Returns,Frank Miller,9781563893414,197,12.8,Superheroes,coloured,1
+comicbook,Batman: The Killing Joke,Alan Moore,9781401216672,50,7.54,Superheroes,coloured,2
+comicbook,Batman: Year One,Frank Miller,1401207529,144,10.45,Superheroes,coloured,1
+poetry,Inward,Yung Pueblo,9781974607204,225,14.65,Philosophy,2
+skill,Presence,Amy Cuddy,9780316256582,355,32.89,Self-Help,30,1,2018,2
+skill,Leading the Unleadable,Alan Willett,9780814437605,240,18.89,Self-Help,29,11,2016,1
+skill,Trust Factor: The Science of Creating High-Performance Companies,Paul Zak,9780814437667,256,18.9,Business,17,1,2017,1
+scientific,Truth and Experience: Between Phenomenology and Hermeneutics,Dorthe Jorgansen,9781443883634,355,35.6,Philosophy,14,1,2016,10.1038/099023a0,2
+skill,Feel Good Food,Joe Wicks,9780008430382,304,30.0,Cooking,17,3,2022,5
+skill,Calculus Made Easy,Silvanus P. Thompson,9798581293508,273,24.5,Math,14,12,2020,2
+scientific,Is Truth to Post-Truth what Modernism Is to Postmodernism?,Klaus Benesch,19919336,25,12.4,Philosophy,15,1,2020,10.4000/ejas.15619,1
+magazine,People Magazine,Otto Fuerbringer,B09238KMRP,20,4.65,Celebrities,19,4,2021,Time Inc,Weekly,2
+magazine,Time Magazine,Richard Stengel,978976008430382,24,5.45,News,14,3,2022,Time Inc,Weekly,4
+magazine,Vanity Fair Magazine,Radhika Jones,97897430382,17,4.56,Culture,28,2,2022,Conde Nast,Monthly,1
