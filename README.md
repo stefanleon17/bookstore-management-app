@@ -30,135 +30,135 @@ A customer walks into the shop, but is not decided on what book to buy. They ask
 # Data Structures
 The following is a list of the data structures used in the bookstore management app.
 
-class Book
-{
-protected:
-	string ID, title, author, ISBN;
-	int numPages, quantity;
-	double price;
-public:
-	Book(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0);
-	void display();		//displays the details of the book on the screen
-	
-	virtual void recommend();	 //polymorphic function; implements quicksort algorithm
+	class Book
+	{
+	protected:
+		string ID, title, author, ISBN;
+		int numPages, quantity;
+		double price;
+	public:
+		Book(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0);
+		void display();		//displays the details of the book on the screen
 
-	void sell();		//lowers the quantity and displays the price that needs to be paid
+		virtual void recommend();	 //polymorphic function; implements quicksort algorithm
 
-	bool searchISBN(string search);	//KMP pattern search algorithm
-	bool searchName(string search);		//BM pattern search algorithm
-	bool searchAuthor(string search);	//BM pattern search algorithm
-	virtual bool search(string search);	//the search method returns true if any of the other methods return true
-};
+		void sell();		//lowers the quantity and displays the price that needs to be paid
+
+		bool searchISBN(string search);	//KMP pattern search algorithm
+		bool searchName(string search);		//BM pattern search algorithm
+		bool searchAuthor(string search);	//BM pattern search algorithm
+		virtual bool search(string search);	//the search method returns true if any of the other methods return true
+	};
 
 
-class LiteraryBook : public Book
-{
-protected:
-	string genre;
-	const string category = "literary";
-public:
-	LiteraryBook(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0, string genre = "");
+	class LiteraryBook : public Book
+	{
+	protected:
+		string genre;
+		const string category = "literary";
+	public:
+		LiteraryBook(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0, string genre = "");
 
-	bool searachGenre(string search);	//BM pattern search algorithm
-	virtual bool search(string search);
-};
+		bool searachGenre(string search);	//BM pattern search algorithm
+		virtual bool search(string search);
+	};
 
-class NonLiteraryBook : public Book
-{
-protected:
-	string topic;
-	const string category = "non-literary";
-	struct Date { int day; int month; int year; } date;
-public:
-	NonLiteraryBook(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0, string topic = "", int day = 1, int month = 1, int year = 1);
-	
-	bool searchTopic(string search);	 //BM pattern search algorithm
-	virtual bool search(string search);
-};
+	class NonLiteraryBook : public Book
+	{
+	protected:
+		string topic;
+		const string category = "non-literary";
+		struct Date { int day; int month; int year; } date;
+	public:
+		NonLiteraryBook(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0, string topic = "", int day = 1, int month = 1, int year = 1);
 
-class FictionBook : public LiteraryBook
-{
-private:
-	const string type = "fiction";
-	bool bestseller;
-public:
-	FictionBook(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0, string genre = "", bool bestseller = 0);
+		bool searchTopic(string search);	 //BM pattern search algorithm
+		virtual bool search(string search);
+	};
 
-	void recommend();	
-};
+	class FictionBook : public LiteraryBook
+	{
+	private:
+		const string type = "fiction";
+		bool bestseller;
+	public:
+		FictionBook(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0, string genre = "", bool bestseller = 0);
 
-class NonFictionBook : public LiteraryBook
-{
-private:
-	const string type = "non-fiction";
-	bool bestseller;
-public:
-	NonFictionBook(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0, string genre = "", bool bestseller = 0);
+		void recommend();	
+	};
 
-	void recommend();
-};
+	class NonFictionBook : public LiteraryBook
+	{
+	private:
+		const string type = "non-fiction";
+		bool bestseller;
+	public:
+		NonFictionBook(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0, string genre = "", bool bestseller = 0);
 
-class ComicBook : public LiteraryBook
-{
-private:
-	const string type = "comicbook";
-public:
-	enum Colour { Coloured, BlackAndWhite } colour;
-	ComicBook(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0, string genre = "", Colour colour = BlackAndWhite);
+		void recommend();
+	};
 
-	void recommend();
+	class ComicBook : public LiteraryBook
+	{
+	private:
+		const string type = "comicbook";
+	public:
+		enum Colour { Coloured, BlackAndWhite } colour;
+		ComicBook(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0, string genre = "", Colour colour = BlackAndWhite);
 
-};
+		void recommend();
 
-class PoetryBook : public LiteraryBook
-{
-private:
-	const string type = "poetry";
-public:
-	PoetryBook(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0, string genre = "");
+	};
 
-	void recommend();
-};
+	class PoetryBook : public LiteraryBook
+	{
+	private:
+		const string type = "poetry";
+	public:
+		PoetryBook(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0, string genre = "");
 
-class SkillBook : public NonLiteraryBook
-{
-private:
-	const string type = "skill";
-public:
-	SkillBook(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0, string topic = "", int day = 1, int month = 1, int year = 1);
+		void recommend();
+	};
 
-	void recommend();
-};
+	class SkillBook : public NonLiteraryBook
+	{
+	private:
+		const string type = "skill";
+	public:
+		SkillBook(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0, string topic = "", int day = 1, int month = 1, int year = 1);
 
-class ScientificBook : public NonLiteraryBook
-{
-private:
-	const string type = "scientific";
-	string doi;
-public:
-	ScientificBook(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0, string topic = "", int day = 1, int month = 1, int year = 1, string doi = "");
-	
-	bool searchDOI(string search);	//KMP pattern search algorithm
-	bool search(string search);
+		void recommend();
+	};
 
-	void recommend();
-};
+	class ScientificBook : public NonLiteraryBook
+	{
+	private:
+		const string type = "scientific";
+		string doi;
+	public:
+		ScientificBook(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0, string topic = "", int day = 1, int month = 1, int year = 1, string doi = "");
 
-class Magazine : public NonLiteraryBook
-{
-private:
-	const string type = "magazine";
-	string publisher;
-public:
-	enum Frequency { Daily, Weekly, Biweekly, Monthly, Annualy } frequency;
+		bool searchDOI(string search);	//KMP pattern search algorithm
+		bool search(string search);
 
-	Magazine(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0, string topic = "", int day = 1, int month = 1, int year = 1, string publisher = "", Frequency frequency = Daily);
+		void recommend();
+	};
 
-	bool searchPublisher(string search);
-	bool search(string search);
+	class Magazine : public NonLiteraryBook
+	{
+	private:
+		const string type = "magazine";
+		string publisher;
+	public:
+		enum Frequency { Daily, Weekly, Biweekly, Monthly, Annualy } frequency;
 
-	void recommend();
-}; 
+		Magazine(string title = "", string author = "", string ISBN = "", int numPages = 0, double price = 0, int quantity = 0, string topic = "", int day = 1, int month = 1, int year = 1, string publisher = "", Frequency frequency = Daily);
+
+		bool searchPublisher(string search);
+		bool search(string search);
+
+		void recommend();
+	}; 
 All of the methods used for some sort of “search” are implemented using either KMP pattern matching algorithms (for strings that use a smaller alphabet, such as an ISBN or DOI code), with a worst-case time complexity of O(n), or a BM pattern matching algorithm (for strings that may use up all of the English alphabet, such as the title of a book or the name of an author), with an average time complexity of O(n). The BM algorithm can potentially be much faster than the KMP algorithm (which is more reliable), but only in cases where letters can be skipped, so it will not be used for strings that use very small and limited alphabets, like the ISBN and DOI codes.
 The program uses a vector of Book type pointers to store references to all the books in the database. Adding a new element to the vector is done in the usual time complexity, either O(1) if there is empty pre-allocated space in the vector, or O(n), if the vector needs to be resized to add the element. Deleting an element is similarly done in O(n) time (it will be therefore recommended that elements are not generally deleted, even if their quantity reaches 0).
 The “recommend” polymorphic function has a different implementation for each of the seven subclasses. It attributes a compatibility score to each book stored in the vector (and store these values in a separate array), based on different parameters, with different weights, and then implements a quicksort algorithm to sort the elements in the vector by their compatibility score. This operation is done, as per the quicksort algorithm, in O(n*log n) time complexity.
