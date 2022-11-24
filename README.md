@@ -28,7 +28,7 @@ A customer walks into the shop, but is not decided on what book to buy. They ask
 
 
 # Data Structures
-The following is a list of the data structures used in the bookstore management app.
+The following is an explanation of the data structures used in the bookstore management app.
 
 	class Book
 	{
@@ -44,7 +44,7 @@ The following is a list of the data structures used in the bookstore management 
 
 		void sell();		//lowers the quantity and displays the price that needs to be paid
 
-		bool searchISBN(string search);	//KMP pattern search algorithm
+		bool searchISBN(string search);		//KMP pattern search algorithm
 		bool searchName(string search);		//BM pattern search algorithm
 		bool searchAuthor(string search);	//BM pattern search algorithm
 		virtual bool search(string search);	//the search method returns true if any of the other methods return true
