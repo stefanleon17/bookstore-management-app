@@ -5,11 +5,11 @@ The program is meant to make the job of managing a bookstore easier. It implemen
 
 Once the program is run, the user is greeted with the following message:
 
-     ============== Welcome to the bookstore management system ==============
- ==== Please input the number in front of the option you would like to select ===== 
-  1. Sell a book
-  2. Search for a book
-  3. Make a book recommendation to a customer
+    ============== Welcome to the bookstore management system ==============
+  ==== Please input the number in front of the option you would like to select ===== 
+   1. Sell a book
+   2. Search for a book
+   3. Make a book recommendation to a customer
 
 To make use of the program, the user has to input a number (1-3), corresponding with the action they would like to perform. The program utilizes program-defined IDs for the books, to make accessing them easier, so it is recommended that a user searches for a book first, to get its ID, before performing any of the other actions.
 After performing any of the actions, the program will close. In order to perform another action, the program must be run again.
