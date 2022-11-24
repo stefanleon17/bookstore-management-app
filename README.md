@@ -6,6 +6,7 @@ The program is meant to make the job of managing a bookstore easier. It implemen
 Once the program is run, the user is greeted with the following message:
 
 ============= Welcome to the bookstore management system =============
+
 ==== Please input the number in front of the option you would like to select ===== 
   1. Sell a book
   2. Search for a book
